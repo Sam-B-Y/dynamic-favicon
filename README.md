@@ -1,1 +1,1 @@
-# dynamic-favicon
+# DyCon: a Dynamic Favicon
