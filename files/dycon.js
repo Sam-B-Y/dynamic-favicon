@@ -1,6 +1,6 @@
 class DyCon {
 
-    displayGreeting(id, darkLink, lightLink, updateTime) {
+    faviconUpdate(id, darkLink, lightLink, updateTime) {
         if (!id) {
             console.error('Favicon ID is missing.');
             return;
@@ -13,6 +13,11 @@ class DyCon {
 
         if (!lightLink) {
             console.error('Light favicon link is missing.');
+            return;
+        }
+
+        if(typeof updateTime !== 'number' && updateTime !== false) {
+            console.error('Update time is invalid.');
             return;
         }
 
@@ -30,7 +35,7 @@ class DyCon {
         };
 
         changeFavicon();
-        if (!isNaN(updateTime)) {
+        if (updateTime) {
             setInterval(changeFavicon, updateTime);
         }
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DyCon.js Demo</title>
+    <link rel="icon" id="favicon" href="./images/blue-square.png">
+</head>
+<body>
+    <h1>DyCon.js Demo</h1>
+
+    <div class="instructions">
+        <p>
+            This demo showcases the DyCon.js plugin that dynamically changes the favicon based on the user's color scheme preference.
+        </p>
+        <p>
+            The favicon will update every 5 seconds based on the user's color scheme (light/dark mode).
+        </p>
+    </div>
+
+    <script src="./js/dycon/dycon.min.js"></script>
+    <script>
+        const dyCon = new DyCon();
+
+        const darkFavicon = './images/black-square.webp';
+        const lightFavicon = './images/yellow-square.jpeg';
+
+        dyCon.faviconUpdate('favicon', darkFavicon, lightFavicon, 1000);
+    </script>
+</body>
+</html>
