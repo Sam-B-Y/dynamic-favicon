@@ -5,7 +5,7 @@ DyCon.js is a JavaScript plugin that allows you to dynamically change the favico
 ## Usage
 1. Download and include the `dycon` folder, and include the minified js file in your HTML code.:
     ```html
-    <script src="/path/to/dycon/dycon.min.js"></script>
+    <script src="path/to/dycon/dycon.min.js"></script>
     ```
     Alterntively, you can also use the `dycon.js` file, which is not minified.
 
